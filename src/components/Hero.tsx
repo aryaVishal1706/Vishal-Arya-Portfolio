@@ -95,7 +95,7 @@ export default function Hero() {
                             <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-purple-600 rounded-[2rem] md:rounded-[3rem] -rotate-6 transition-transform hover:rotate-0 duration-500" />
                             <div className="absolute inset-1 bg-slate-900 rounded-[2rem] md:rounded-[3rem] overflow-hidden flex items-center justify-center border border-white/10">
                                 <Image
-                                    src="/vishal-avatar.png"
+                                    src="/Vishal-Arya-Portfolio/vishal-avatar.png"
                                     alt="Arya Vishal"
                                     layout="fill"
                                     objectFit="cover"
