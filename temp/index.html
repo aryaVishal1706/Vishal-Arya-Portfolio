@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vishal Arya | AI-ML Engineer & Cloud Architect</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- ── PRELOADER ─────────────────────────────────── -->
+<div id="preloader" class="preloader">
+  <div class="pl-ring"></div>
+  <div class="pl-logo">VA<span>.</span></div>
+</div>
+
+<!-- ── CURSOR ────────────────────────────────────── -->
+<div id="cursor" class="cursor"></div>
+<div id="cursorFollower" class="cursor-follower"></div>
+
+<!-- ── SCROLL PROGRESS ───────────────────────────── -->
+<div id="scrollBar" class="scroll-bar"></div>
+
+<!-- ── NAVBAR ────────────────────────────────────── -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="nav-logo">VA<span class="logo-dot">.</span></a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <button id="themeBtn" class="theme-btn" aria-label="Toggle theme">
+        <i class="fas fa-sun" id="themeIcon"></i>
+      </button>
+      <button id="hamburger" class="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════════
+     HERO
+════════════════════════════════════════════════════ -->
+<section id="home" class="hero">
+  <canvas id="heroCanvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-badge"><span class="badge-pulse"></span>Available for opportunities</div>
+    <h1 class="hero-name">
+      <span class="name-row">VISHAL</span>
+      <span class="name-row accent-grad">ARYA</span>
+    </h1>
+    <div class="hero-role">
+      <span class="role-static">I build </span>
+      <span id="typed"></span><span class="caret">_</span>
+    </div>
+    <p class="hero-bio">
+      Research Associate at <strong>CloudThat Technologies</strong> · 2× AWS Certified · AI/ML Engineer<br>
+      Crafting intelligent, cloud-first systems that solve real-world challenges.
+    </p>
+    <div class="hero-kpis">
+      <div class="kpi"><span class="kpi-n" data-val="2" data-sfx="+">0</span><span class="kpi-l">Yrs Exp</span></div>
+      <div class="kpi-sep"></div>
+      <div class="kpi"><span class="kpi-n" data-val="2" data-sfx="">0</span><span class="kpi-l">AWS Certs</span></div>
+      <div class="kpi-sep"></div>
+      <div class="kpi"><span class="kpi-n" data-val="6" data-sfx="+">0</span><span class="kpi-l">Projects</span></div>
+      <div class="kpi-sep"></div>
+      <div class="kpi"><span class="kpi-n" data-val="800" data-sfx="+">0</span><span class="kpi-l">LinkedIn</span></div>
+    </div>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-3d primary-3d"><i class="fas fa-rocket"></i>View Projects</a>
+      <a href="#contact" class="btn-3d outline-3d"><i class="fas fa-paper-plane"></i>Hire Me</a>
+    </div>
+  </div>
+  <div class="scroll-hint">
+    <div class="mouse-icon"><div class="mouse-wheel"></div></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     ABOUT
+════════════════════════════════════════════════════ -->
+<section id="about" class="section about-sec">
+  <div class="container">
+    <div class="sec-header">
+      <span class="sec-label">WHO I AM</span>
+      <h2 class="sec-title">About <span class="accent-grad">Me</span></h2>
+    </div>
+    <div class="about-grid">
+      <!-- 3D Flip Card -->
+      <div class="flip-wrap">
+        <div class="flip-inner">
+          <div class="flip-face front glass-card">
+            <div class="av-ring">
+              <div class="av-core">VA</div>
+              <div class="av-orbit o1"></div>
+              <div class="av-orbit o2"></div>
+              <div class="av-orbit o3"></div>
+              <div class="orb-dot d1" title="Python"></div>
+              <div class="orb-dot d2" title="AWS"></div>
+              <div class="orb-dot d3" title="ML"></div>
+            </div>
+            <div class="about-info-list">
+              <div class="ai-row"><i class="fas fa-map-marker-alt"></i>Ahmedabad, Gujarat, India</div>
+              <div class="ai-row"><i class="fas fa-briefcase"></i>CloudThat Technologies</div>
+              <div class="ai-row"><i class="fas fa-graduation-cap"></i>BTech CSE – Nirma University</div>
+              <div class="ai-row"><i class="fas fa-envelope"></i>vishalarya1706@gmail.com</div>
+            </div>
+            <div class="flip-hint"><i class="fas fa-sync-alt"></i> Hover to flip</div>
+          </div>
+          <div class="flip-face back glass-card">
+            <h3 class="back-title">Core Values</h3>
+            <div class="values-grid">
+              <div class="val-item"><span>🚀</span>Innovation First</div>
+              <div class="val-item"><span>☁️</span>Cloud-Native</div>
+              <div class="val-item"><span>🤖</span>AI-Driven</div>
+              <div class="val-item"><span>📈</span>Continuous Learning</div>
+              <div class="val-item"><span>🤝</span>Collaborative</div>
+              <div class="val-item"><span>🎯</span>Impact-Focused</div>
+            </div>
+            <div class="flip-hint back-hint"><i class="fas fa-sync-alt"></i> Hover to flip back</div>
+          </div>
+        </div>
+      </div>
+      <!-- Text -->
+      <div class="about-txt">
+        <p>Hey there! 👋 I'm <strong>Vishal Yogeshbhai Arya</strong> — a Computer Science graduate from <strong>Nirma University</strong>, fuelled by a passion for <strong>AI/ML, cloud infrastructure, and scalable systems</strong>.</p>
+        <p>Currently a <strong>Research Associate at CloudThat Technologies</strong>, I develop intelligent cloud automation using AWS and cutting-edge generative AI models. I also contributed to an <strong>ISRO-funded research project</strong> detecting marine debris via satellite imagery.</p>
+        <p>I hold <strong>2 active AWS certifications</strong> (AI Practitioner: 881/1000 · Solutions Architect: 809/1000) and am passionate about building systems that are both technically elegant and impactful.</p>
+        <div class="about-chips">
+          <span class="achip">Cloud Architecture</span>
+          <span class="achip">Machine Learning</span>
+          <span class="achip">Remote Sensing</span>
+          <span class="achip">Infrastructure as Code</span>
+          <span class="achip">Deep Learning</span>
+          <span class="achip">DevOps</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     SKILLS
+════════════════════════════════════════════════════ -->
+<section id="skills" class="section skills-sec">
+  <div class="container">
+    <div class="sec-header">
+      <span class="sec-label">WHAT I KNOW</span>
+      <h2 class="sec-title">Technical <span class="accent-grad">Skills</span></h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card glass-card tilt-card ri">
+        <div class="skill-head"><i class="fab fa-python"></i>Languages</div>
+        <div class="sbars">
+          <div class="sbar-row"><span>Python</span><span>90%</span><div class="sbar-track"><div class="sbar-fill" data-w="90"></div></div></div>
+          <div class="sbar-row"><span>C / C++</span><span>85%</span><div class="sbar-track"><div class="sbar-fill" data-w="85"></div></div></div>
+          <div class="sbar-row"><span>JavaScript</span><span>80%</span><div class="sbar-track"><div class="sbar-fill" data-w="80"></div></div></div>
+          <div class="sbar-row"><span>Java</span><span>70%</span><div class="sbar-track"><div class="sbar-fill" data-w="70"></div></div></div>
+          <div class="sbar-row"><span>SQL</span><span>65%</span><div class="sbar-track"><div class="sbar-fill" data-w="65"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-card glass-card tilt-card ri">
+        <div class="skill-head"><i class="fab fa-aws"></i>Cloud & DevOps</div>
+        <div class="chips-cloud">
+          <span class="sc aws">Lambda</span><span class="sc aws">EC2</span><span class="sc aws">S3</span>
+          <span class="sc aws">SageMaker</span><span class="sc aws">Bedrock</span><span class="sc aws">CloudFormation</span>
+          <span class="sc dev">Terraform</span><span class="sc dev">Docker</span><span class="sc dev">CodeBuild</span>
+          <span class="sc dev">Linux</span><span class="sc dev">CI/CD</span>
+        </div>
+      </div>
+      <div class="skill-card glass-card tilt-card ri">
+        <div class="skill-head"><i class="fas fa-brain"></i>AI / ML</div>
+        <div class="sbars">
+          <div class="sbar-row"><span>Machine Learning</span><span>85%</span><div class="sbar-track"><div class="sbar-fill" data-w="85"></div></div></div>
+          <div class="sbar-row"><span>Deep Learning</span><span>70%</span><div class="sbar-track"><div class="sbar-fill" data-w="70"></div></div></div>
+          <div class="sbar-row"><span>Computer Vision</span><span>75%</span><div class="sbar-track"><div class="sbar-fill" data-w="75"></div></div></div>
+          <div class="sbar-row"><span>Neural Networks</span><span>65%</span><div class="sbar-track"><div class="sbar-fill" data-w="65"></div></div></div>
+        </div>
+      </div>
+      <div class="skill-card glass-card tilt-card ri">
+        <div class="skill-head"><i class="fas fa-tools"></i>Frameworks & Tools</div>
+        <div class="chips-cloud">
+          <span class="sc tool">TensorFlow</span><span class="sc tool">Scikit-learn</span>
+          <span class="sc tool">U-Net</span><span class="sc tool">Streamlit</span>
+          <span class="sc tool">Jupyter</span><span class="sc tool">Git/GitHub</span>
+          <span class="sc web">HTML5/CSS3</span><span class="sc web">Bootstrap</span>
+          <span class="sc web">MySQL</span><span class="sc web">PHP</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     EXPERIENCE
+════════════════════════════════════════════════════ -->
+<section id="experience" class="section exp-sec">
+  <div class="container">
+    <div class="sec-header">
+      <span class="sec-label">WORK HISTORY</span>
+      <h2 class="sec-title">Professional <span class="accent-grad">Experience</span></h2>
+    </div>
+    <div class="timeline">
+
+      <div class="tl-item ri">
+        <div class="tl-dot active-dot"></div>
+        <div class="tl-card glass-card">
+          <div class="tl-top">
+            <div>
+              <h3>Research Associate</h3>
+              <p class="tl-co"><i class="fas fa-cloud"></i> CloudThat Technologies</p>
+            </div>
+            <div class="tl-right-info">
+              <span class="tl-date">Jul 2025 – Present</span>
+              <span class="tl-curr">● Current</span>
+            </div>
+          </div>
+          <ul class="tl-ul">
+            <li>Built NL-to-AWS deployment system — <strong>80% faster</strong> deployment</li>
+            <li>Engineered automated pipelines with Lambda, EC2 & S3</li>
+            <li>Applied AI/ML for intelligent cloud resource optimization</li>
+            <li>Delivered enterprise multi-tier cloud architectures</li>
+          </ul>
+          <div class="tl-chips"><span>AWS</span><span>Lambda</span><span>EC2</span><span>AI/ML</span><span>IaC</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item ri">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass-card">
+          <div class="tl-top">
+            <div>
+              <h3>Research Intern</h3>
+              <p class="tl-co"><i class="fas fa-cloud"></i> CloudThat Technologies</p>
+            </div>
+            <div class="tl-right-info"><span class="tl-date">Jan – Jul 2025</span></div>
+          </div>
+          <ul class="tl-ul">
+            <li>Integrated <strong>Claude Sonnet 3.7</strong> from AWS Bedrock for script generation</li>
+            <li>Implemented CodeBuild CI/CD pipelines for seamless deployments</li>
+            <li>Terraform & CloudFormation for infrastructure provisioning</li>
+          </ul>
+          <div class="tl-chips"><span>Bedrock</span><span>Terraform</span><span>CodeBuild</span><span>Claude 3.7</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item ri">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass-card">
+          <div class="tl-top">
+            <div>
+              <h3>Summer Research Intern</h3>
+              <p class="tl-co"><i class="fas fa-satellite"></i> Nirma University <span class="isro-pill">ISRO Funded 🚀</span></p>
+            </div>
+            <div class="tl-right-info"><span class="tl-date">May – Jul 2024</span></div>
+          </div>
+          <ul class="tl-ul">
+            <li>ISRO-funded project: Marine debris detection via Sentinel-2 imagery</li>
+            <li>Processed <strong>1,381+ patches</strong> with 800K+ annotated pixels (MARIDA)</li>
+            <li>Achieved <strong>94% accuracy</strong> with optimized Random Forest + U-Net</li>
+          </ul>
+          <div class="tl-chips"><span>U-Net</span><span>Random Forest</span><span>Remote Sensing</span><span>MARIDA</span></div>
+        </div>
+      </div>
+
+      <div class="tl-item ri">
+        <div class="tl-dot"></div>
+        <div class="tl-card glass-card">
+          <div class="tl-top">
+            <div>
+              <h3>Software Engineer Intern</h3>
+              <p class="tl-co"><i class="fas fa-building"></i> Lauruss Infoways Pvt. Ltd.</p>
+            </div>
+            <div class="tl-right-info"><span class="tl-date">May – Aug 2022</span></div>
+          </div>
+          <ul class="tl-ul">
+            <li>Built dynamic web apps with PHP, HTML5, CSS3, JavaScript</li>
+            <li>Server-side optimisation: <strong>40% faster</strong> response times</li>
+            <li>Cross-device apps with <strong>99.9% uptime</strong></li>
+          </ul>
+          <div class="tl-chips"><span>PHP</span><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     PROJECTS  (3D flip cards)
+════════════════════════════════════════════════════ -->
+<section id="projects" class="section proj-sec">
+  <div class="container">
+    <div class="sec-header">
+      <span class="sec-label">WHAT I'VE BUILT</span>
+      <h2 class="sec-title">Featured <span class="accent-grad">Projects</span></h2>
+    </div>
+    <div class="proj-grid">
+
+      <div class="pfc ri">
+        <div class="pfc-inner">
+          <div class="pfc-front glass-card">
+            <div class="pfc-icon cloud-i"><i class="fas fa-cloud-upload-alt"></i></div>
+            <div class="pfc-feat-tag">⭐ Featured</div>
+            <h3>Infrastructure as Code</h3>
+            <p>Automated AWS deployment via NL-to-code with Claude Sonnet 3.7. Cut deployment time by 80%.</p>
+            <div class="pfc-pills"><span>CloudFormation</span><span>Terraform</span><span>Bedrock</span></div>
+            <div class="pfc-flip-hint"><i class="fas fa-sync-alt"></i> Hover for details</div>
+          </div>
+          <div class="pfc-back glass-card">
+            <h3>IaC Details</h3>
+            <ul class="pfc-list">
+              <li>🏗️ CloudFormation + Terraform auto-provisioning</li>
+              <li>🤖 Claude Sonnet 3.7 intelligent script generation</li>
+              <li>⚡ 80% reduction in deployment time</li>
+              <li>🔄 CodeBuild CI/CD pipelines</li>
+              <li>🏢 Multi-account AWS enterprise support</li>
+            </ul>
+            <span class="pfc-period"><i class="far fa-clock"></i> Jan 2025 – Present</span>
+            <a href="https://github.com/aryaVishal1706" target="_blank" class="pfc-gh"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pfc ri">
+        <div class="pfc-inner">
+          <div class="pfc-front glass-card">
+            <div class="pfc-icon sat-i"><i class="fas fa-satellite"></i></div>
+            <div class="pfc-feat-tag isro-tag">ISRO-Funded 🛸</div>
+            <h3>Marine Debris Detection</h3>
+            <p>ML model on Sentinel-2 satellite imagery (MARIDA) achieving 94% accuracy in detecting marine debris.</p>
+            <div class="pfc-pills"><span>U-Net</span><span>Random Forest</span><span>Sentinel-2</span></div>
+            <div class="pfc-flip-hint"><i class="fas fa-sync-alt"></i> Hover for details</div>
+          </div>
+          <div class="pfc-back glass-card">
+            <h3>Marine AI Details</h3>
+            <ul class="pfc-list">
+              <li>🛰️ Sentinel-2 satellite imagery analysis</li>
+              <li>📊 1,381+ patches, 800K+ annotated pixels</li>
+              <li>🎯 94% accuracy with Random Forest</li>
+              <li>🌊 U-Net deep learning model</li>
+              <li>🌍 Global marine pollution monitoring</li>
+            </ul>
+            <span class="pfc-period"><i class="far fa-clock"></i> May – Jul 2024</span>
+            <a href="https://github.com/aryaVishal1706" target="_blank" class="pfc-gh"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pfc ri">
+        <div class="pfc-inner">
+          <div class="pfc-front glass-card">
+            <div class="pfc-icon chart-i"><i class="fas fa-chart-line"></i></div>
+            <h3>Customer Churn Prediction</h3>
+            <p>ML predictive system with real-time Streamlit dashboard for business retention insights.</p>
+            <div class="pfc-pills"><span>ANN</span><span>Streamlit</span><span>Scikit-learn</span></div>
+            <div class="pfc-flip-hint"><i class="fas fa-sync-alt"></i> Hover for details</div>
+          </div>
+          <div class="pfc-back glass-card">
+            <h3>Churn Details</h3>
+            <ul class="pfc-list">
+              <li>🧠 ANN + Logistic Regression ensemble</li>
+              <li>📉 Gradient Descent optimisation</li>
+              <li>📊 Real-time Streamlit dashboard</li>
+              <li>💡 Actionable business insights</li>
+              <li>🎯 Customer retention strategies</li>
+            </ul>
+            <span class="pfc-period"><i class="far fa-clock"></i> Oct – Nov 2023</span>
+            <a href="https://github.com/aryaVishal1706" target="_blank" class="pfc-gh"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pfc ri">
+        <div class="pfc-inner">
+          <div class="pfc-front glass-card">
+            <div class="pfc-icon dig-i"><i class="fas fa-hand-paper"></i></div>
+            <h3>Handwritten Digit Classification</h3>
+            <p>Deep learning model for handwriting recognition with real-time inference and multi-language support.</p>
+            <div class="pfc-pills"><span>TensorFlow</span><span>CNN</span><span>Jupyter</span></div>
+            <div class="pfc-flip-hint"><i class="fas fa-sync-alt"></i> Hover for details</div>
+          </div>
+          <div class="pfc-back glass-card">
+            <h3>Digit Classification</h3>
+            <ul class="pfc-list">
+              <li>✍️ High-accuracy digit recognition</li>
+              <li>🌍 Multi-language handwriting support</li>
+              <li>⚡ Real-time inference pipeline</li>
+              <li>🖥️ User-friendly web demo API</li>
+              <li>📄 Automated document processing</li>
+            </ul>
+            <a href="https://github.com/aryaVishal1706/Handwritten-Digit-Classification" target="_blank" class="pfc-gh"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pfc ri">
+        <div class="pfc-inner">
+          <div class="pfc-front glass-card">
+            <div class="pfc-icon bot-i"><i class="fas fa-robot"></i></div>
+            <h3>College Chatbot</h3>
+            <p>Intelligent NLP assistant helping students with events, schedules, departments & academic info.</p>
+            <div class="pfc-pills"><span>Python</span><span>NLP</span><span>Chatbot</span></div>
+            <div class="pfc-flip-hint"><i class="fas fa-sync-alt"></i> Hover for details</div>
+          </div>
+          <div class="pfc-back glass-card">
+            <h3>Chatbot Details</h3>
+            <ul class="pfc-list">
+              <li>🤖 NLP intent classification</li>
+              <li>📅 Event & schedule queries</li>
+              <li>🏫 Department info assistant</li>
+              <li>👥 Student-friendly interface</li>
+              <li>🔄 Continuous learning design</li>
+            </ul>
+            <a href="https://github.com/aryaVishal1706" target="_blank" class="pfc-gh"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pfc ri">
+        <div class="pfc-inner">
+          <div class="pfc-front glass-card">
+            <div class="pfc-icon cv-i"><i class="fas fa-file-alt"></i></div>
+            <h3>Dynamic CV Builder</h3>
+            <p>Web tool that generates polished CVs with Bootstrap, CSS3 animations & JS interactions.</p>
+            <div class="pfc-pills"><span>HTML5</span><span>Bootstrap</span><span>PHP</span></div>
+            <div class="pfc-flip-hint"><i class="fas fa-sync-alt"></i> Hover for details</div>
+          </div>
+          <div class="pfc-back glass-card">
+            <h3>CV Builder Details</h3>
+            <ul class="pfc-list">
+              <li>📝 Comprehensive form validation</li>
+              <li>📱 Responsive Bootstrap layout</li>
+              <li>✨ Advanced CSS3 animations</li>
+              <li>⚙️ JS interactions & logic</li>
+              <li>🖨️ Professional CV generation</li>
+            </ul>
+            <span class="pfc-period"><i class="far fa-clock"></i> Jan – Jul 2023</span>
+            <a href="https://github.com/aryaVishal1706/Vishal-Arya-Portfolio" target="_blank" class="pfc-gh"><i class="fab fa-github"></i> GitHub</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     CERTIFICATIONS
+════════════════════════════════════════════════════ -->
+<section id="certifications" class="section cert-sec">
+  <div class="container">
+    <div class="sec-header">
+      <span class="sec-label">CREDENTIALS</span>
+      <h2 class="sec-title">Certifications & <span class="accent-grad">Achievements</span></h2>
+    </div>
+    <div class="cert-grid">
+
+      <div class="cert-card glass-card tilt-card ri aws-cert">
+        <div class="cert-shine"></div>
+        <div class="cert-icon-wrap aws-icon"><i class="fab fa-aws"></i></div>
+        <h3>AWS Solutions Architect</h3>
+        <p>Associate (SAA-C03)</p>
+        <div class="cert-score blue-score">809 / 1000</div>
+        <span class="cert-meta">Amazon Web Services · Mar 2026</span>
+        <div class="cert-active-badge">Active ✓</div>
+      </div>
+
+      <div class="cert-card glass-card tilt-card ri aws-cert">
+        <div class="cert-shine"></div>
+        <div class="cert-icon-wrap ai-icon"><i class="fas fa-robot"></i></div>
+        <h3>AWS AI Practitioner</h3>
+        <p>Foundation Level</p>
+        <div class="cert-score blue-score">881 / 1000</div>
+        <span class="cert-meta">Amazon Web Services · Sep 2025</span>
+        <div class="cert-active-badge">Active ✓</div>
+      </div>
+
+      <div class="cert-card glass-card tilt-card ri">
+        <div class="cert-shine"></div>
+        <div class="cert-icon-wrap ml-icon"><i class="fas fa-brain"></i></div>
+        <h3>Supervised ML</h3>
+        <p>Regression & Classification</p>
+        <div class="cert-score green-score">100 / 100 🌟</div>
+        <span class="cert-meta">Coursera · Feb 2024</span>
+      </div>
+
+      <div class="cert-card glass-card tilt-card ri">
+        <div class="cert-shine"></div>
+        <div class="cert-icon-wrap ml-icon"><i class="fas fa-network-wired"></i></div>
+        <h3>Unsupervised Learning & RL</h3>
+        <p>Advanced ML Specialisation</p>
+        <div class="cert-score blue-score">98.20 / 100</div>
+        <span class="cert-meta">Coursera</span>
+      </div>
+
+      <div class="cert-card glass-card tilt-card ri">
+        <div class="cert-shine"></div>
+        <div class="cert-icon-wrap trophy-icon"><i class="fas fa-trophy"></i></div>
+        <h3>🥈 Mind Hackathon Winner</h3>
+        <p>2nd Place – Intech Track</p>
+        <span class="cert-meta">March 2023</span>
+      </div>
+
+      <div class="cert-card glass-card tilt-card ri">
+        <div class="cert-shine"></div>
+        <div class="cert-icon-wrap star-icon"><i class="fas fa-star"></i></div>
+        <h3>Academic Excellence</h3>
+        <p>2nd Position in IT Branch</p>
+        <div class="cert-score green-score">CGPA: 9.54 / 10</div>
+        <span class="cert-meta">Diploma · 3rd Year</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     EDUCATION
+════════════════════════════════════════════════════ -->
+<section id="education" class="section edu-sec">
+  <div class="container">
+    <div class="sec-header">
+      <span class="sec-label">MY BACKGROUND</span>
+      <h2 class="sec-title">Educational <span class="accent-grad">Background</span></h2>
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card glass-card tilt-card ri">
+        <div class="edu-icon"><i class="fas fa-university"></i></div>
+        <div class="edu-body">
+          <h3>BTech – Computer Science & Engineering</h3>
+          <p class="edu-inst">Nirma University, Ahmedabad</p>
+          <div class="edu-row"><span><i class="far fa-calendar"></i> 2022 – 2025</span><span class="edu-gpa">CGPA: <strong>6.72 / 10</strong></span></div>
+          <p class="edu-courses">Data Structures · ML · Algorithms · Database Systems · Software Engineering</p>
+        </div>
+      </div>
+      <div class="edu-card glass-card tilt-card ri">
+        <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="edu-body">
+          <h3>Diploma – Information Technology</h3>
+          <p class="edu-inst">Aditya Silver Oak Institute (GTU)</p>
+          <div class="edu-row"><span><i class="far fa-calendar"></i> 2019 – 2022</span><span class="edu-gpa">CGPA: <strong>9.54 / 10</strong> 🏆</span></div>
+          <p class="edu-courses">Web Dev · Database Management · Programming Fundamentals · 2nd in IT Branch</p>
+        </div>
+      </div>
+      <div class="edu-card glass-card tilt-card ri">
+        <div class="edu-icon"><i class="fas fa-school"></i></div>
+        <div class="edu-body">
+          <h3>SSC – General Studies</h3>
+          <p class="edu-inst">Shah V.H.H. High School (GSEB)</p>
+          <div class="edu-row"><span><i class="far fa-calendar"></i> 2019</span><span class="edu-gpa">Score: <strong>72.66%</strong></span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════════
+     CONTACT  (Email + Phone ONLY)
+════════════════════════════════════════════════════ -->
+<section id="contact" class="section contact-sec">
+  <div class="container">
+    <div class="sec-header">
+      <span class="sec-label">GET IN TOUCH</span>
+      <h2 class="sec-title">Reach <span class="accent-grad">Out</span></h2>
+    </div>
+    <p class="contact-intro">Have an opportunity or want to collaborate? I'd love to hear from you directly!</p>
+    <div class="contact-duo">
+
+      <div class="contact-card email-ccard ri tilt-card" id="emailCard">
+        <div class="cc-particles"></div>
+        <div class="cc-glow"></div>
+        <div class="cc-icon"><i class="fas fa-envelope"></i></div>
+        <div class="cc-type">Email Address</div>
+        <div class="cc-val">vishalarya1706@gmail.com</div>
+        <div class="cc-actions">
+          <button class="cc-btn copy-btn" data-copy="vishalarya1706@gmail.com" id="copyEmail">
+            <i class="fas fa-copy"></i> Copy
+          </button>
+          <a href="mailto:vishalarya1706@gmail.com" class="cc-btn send-btn">
+            <i class="fas fa-paper-plane"></i> Send Email
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-card phone-ccard ri tilt-card" id="phoneCard">
+        <div class="cc-particles"></div>
+        <div class="cc-glow phone-glow"></div>
+        <div class="cc-icon phone-icon"><i class="fas fa-phone-alt"></i></div>
+        <div class="cc-type">Mobile Number</div>
+        <div class="cc-val">+91-7984832995</div>
+        <div class="cc-actions">
+          <button class="cc-btn copy-btn" data-copy="+917984832995" id="copyPhone">
+            <i class="fas fa-copy"></i> Copy
+          </button>
+          <a href="tel:+917984832995" class="cc-btn call-btn">
+            <i class="fas fa-phone"></i> Call Now
+          </a>
+        </div>
+      </div>
+
+    </div>
+    <p class="contact-note"><i class="fas fa-clock"></i> Typically responds within <strong>24 hours</strong>. Open to full-time roles, research collaborations & cloud/ML consulting.</p>
+  </div>
+</section>
+
+<!-- ── FOOTER ─────────────────────────────────────── -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-logo">VA<span class="logo-dot">.</span></div>
+    <p>© 2026 <strong>Vishal Arya</strong> · Ahmedabad, India · Crafted with Three.js & ❤️</p>
+    <div class="footer-socials">
+      <a href="mailto:vishalarya1706@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://in.linkedin.com/in/vishalarya1706" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/aryaVishal1706" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- ── TOAST ──────────────────────────────────────── -->
+<div id="toast" class="toast"><i class="fas fa-check-circle"></i> <span id="toastMsg"></span></div>
+
+<!-- ══════════════════════════════════════════════════
+     CHATBOT  (VishalBot AI)
+════════════════════════════════════════════════════ -->
+<div class="chatbot-wrap" id="chatbotWrap">
+  <div class="chatbot-win glass-card" id="chatbotWin">
+    <div class="cb-header">
+      <div class="cb-hinfo">
+        <div class="cb-avatar"><i class="fas fa-robot"></i></div>
+        <div>
+          <div class="cb-name">VishalBot</div>
+          <div class="cb-status"><span class="cb-dot"></span>AI Assistant · Online</div>
+        </div>
+      </div>
+      <button class="cb-close" id="cbClose"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cb-msgs" id="cbMsgs">
+      <div class="cb-msg bot-msg">
+        <div class="msg-bub">
+          Hey! 👋 I'm <strong>VishalBot</strong> — Vishal's personal AI assistant.<br>
+          Ask me about his skills, experience, projects, or how to reach him!
+        </div>
+        <div class="cb-quick-btns" id="quickBtns">
+          <button class="qb" data-q="What are Vishal's skills?">💻 Skills</button>
+          <button class="qb" data-q="Tell me about Vishal's projects">🚀 Projects</button>
+          <button class="qb" data-q="What is Vishal's experience?">💼 Experience</button>
+          <button class="qb" data-q="How can I contact Vishal?">📬 Contact</button>
+          <button class="qb" data-q="Tell me about Vishal's certifications">🏆 Certs</button>
+        </div>
+      </div>
+    </div>
+    <div class="cb-input-area">
+      <input id="cbInput" type="text" placeholder="Ask me anything about Vishal..." autocomplete="off"/>
+      <button id="cbSend"><i class="fas fa-paper-plane"></i></button>
+    </div>
+  </div>
+  <button class="cb-toggle" id="cbToggle" aria-label="Open chatbot">
+    <i class="fas fa-robot" id="cbOpenIcon"></i>
+    <i class="fas fa-times" id="cbCloseIcon" style="display:none"></i>
+    <div class="cb-pulse"></div>
+    <div class="cb-tooltip">Chat with VishalBot!</div>
+  </button>
+</div>
+
+<script>
+  // Load Three.js with CDN fallback — won't block page if CDN is slow
+  (function() {
+    var s = document.createElement('script');
+    s.src = 'https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js';
+    s.async = true;
+    s.onerror = function() { console.warn('Three.js CDN failed — 3D disabled, site still works!'); };
+    document.head.appendChild(s);
+  })();
+</script>
+<script src="script.js"></script>
+</body>
+</html>
